@@ -7,7 +7,7 @@ const isProduction = process.env.isProduction
 
 function fixName(name) {
     if (name.indexOf('@') == -1) return name
-    return name.replace('@', '').replace('makajs', 'maka').replace('/', '-')
+    return name.replace('@', '').replace('ttkjs', 'ttk').replace('/', '-')
 }
 
 
@@ -90,14 +90,14 @@ export default function loadApp(app) {
             var appName = url.substr(url.lastIndexOf('/') + 1).replace(/(\.js)|(\.min\.js)/, ''),
                 pub = url.indexOf('/') ? url.substr(0, url.lastIndexOf('/') + 1) : ''
             */
-            var appName = findNameByUrl(url) 
+            var appName = findNameByUrl(url)
             var pub = url.indexOf('/') ? url.substr(0, url.lastIndexOf('/') + 1) : ''
             globalObj[`__pub_${appName}__`] = pub
             return !appFactory.existsApp(appName)
         })
 
         urls = urls.map(u => {
-            if(u.indexOf('http') != -1)
+            if (u.indexOf('http') != -1)
                 return u
             return isProduction ? (u + '.min') : u
         })
@@ -128,8 +128,8 @@ export default function loadApp(app) {
             */
 
             var cssUrls = urls.map(u => {
-                if(u.indexOf('http') != -1)
-                    return `css!${u.replace('.js', '.css')}`    
+                if (u.indexOf('http') != -1)
+                    return `css!${u.replace('.js', '.css')}`
                 return `css!${u}`
             })
             globalObj.require(cssUrls, async (...args) => {

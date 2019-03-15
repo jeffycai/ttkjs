@@ -1,6 +1,6 @@
 var isProduction = process.argv.splice(2).length > 0
 
-var request = require('request');
+var r = require('request');
 const fs = require('fs');
 const url = require('url');
 const path = require('path');
@@ -30,7 +30,7 @@ else
     ]
 
 jss.forEach(js => {
-    request(js, function (err, res, body) {
+    r(js, function (err, res, body) {
         var o = path.parse(js)
         var base = o.base
         base = base.replace('production.min', 'development')

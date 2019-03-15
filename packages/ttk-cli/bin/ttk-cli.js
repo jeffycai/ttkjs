@@ -32,7 +32,7 @@ try {
     console.log(err)
 }
 if (!flag) {
-    console.log(chalk.yellowBright('Maka depends on yarn, you do not install it. \n'))
+    console.log(chalk.yellowBright('TTK depends on yarn, you do not install it. \n'))
     console.log(chalk.greenBright('Please install yarn first.\n'))
     console.log(chalk.cyan('npm i -g yarn'))
     process.exit(1);

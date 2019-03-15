@@ -3,7 +3,7 @@ var globalObj = getGlobal()
 class pluginFactory {
     constructor() {
         this.plugins = []
-        globalObj.__maka_plugins__ = this.plugins
+        globalObj.__ttk_plugins__ = this.plugins
     }
 
     registerPlugin = (name, forApp) => {

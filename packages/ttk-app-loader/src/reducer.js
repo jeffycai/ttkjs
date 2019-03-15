@@ -40,10 +40,10 @@ function loadApp(state, {
             return state
         }
 
-        if(!forceLoad)
+        if (!forceLoad)
             state = state.set(fullName, Map())
         else
-            state = state.set(fullName, Map({prevData: state.getIn([fullName, 'data'])}))
+            state = state.set(fullName, Map({ prevData: state.getIn([fullName, 'data']) }))
 
         appInfo = { ...appInfo }
 
@@ -147,10 +147,10 @@ function reduce(state, {
         newState = newState(injectFunsForReducer)
     }
 
-    if (globalObj.__maka_record_action__ === true) {
-        globalObj.__maka_actions__ = globalObj.__maka_actions__ || []
+    if (globalObj.__ttk_record_action__ === true) {
+        globalObj.__ttk_actions__ = globalObj.__ttk_actions__ || []
         var endDate = new Date()
-        globalObj.__maka_actions__.unshift({
+        globalObj.__ttk_actions__.unshift({
             appFullName: fullName,
             reduceMethod: type,
             payload,
@@ -161,8 +161,8 @@ function reduce(state, {
             elapsedTime: Math.abs((startDate.getTime() - endDate.getTime()))//(1000*60*60*24)
         })
     } else {
-        if (globalObj.__maka_actions__)
-        globalObj.__maka_actions__ = undefined
+        if (globalObj.__ttk_actions__)
+            globalObj.__ttk_actions__ = undefined
     }
 
     return state.set(fullName, newState)

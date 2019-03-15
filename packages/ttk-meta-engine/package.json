@@ -1,6 +1,6 @@
 {
   "name": "@ttkjs/meta-engine",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "ttk meta engine",
   "main": "./lib/index.js",
   "scripts": {

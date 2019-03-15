@@ -6,7 +6,7 @@ var globalObj = getGlobal()
 class appFactory {
     constructor() {
         this.apps = {}
-        globalObj.__maka_apps__ = this.apps
+        globalObj.__ttk_apps__ = this.apps
     }
 
     registerApp = (name, app) => {

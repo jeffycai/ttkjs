@@ -24,7 +24,7 @@ export default function start() {
 	const store = createStore(reducer, Map(), applyMiddleware(...mw))
 
 	globalObj.reduxStore = store
-	globalObj.__maka_store__ = store
+	globalObj.__ttk_store__ = store
 
 	if (!currentConfig.rootWrapper) {
 		currentConfig.rootWrapper = (child) => {

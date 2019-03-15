@@ -1,5 +1,5 @@
 import pkgJson from './package.json'
-import { actionMixin } from 'maka'
+import { actionMixin } from 'ttk'
 import './style.less'
 
 const name = pkgJson.name

@@ -1,6 +1,6 @@
 {
   "name": "@ttkjs/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ttkjs sdk",
   "main": "lib/index.js",
   "scripts": {
@@ -36,6 +36,7 @@
     "cross-env": "*",
     "react": "*",
     "react-dom": "*",
+    "request": "*",
     "uglifyjs-webpack-plugin": "*",
     "webpack": "*",
     "webpack-cli": "*"

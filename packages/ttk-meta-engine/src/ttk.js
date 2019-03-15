@@ -1,7 +1,7 @@
 import React from 'react'
 import componentFactory from './componentFactory'
 import memoize from 'lodash/memoize'
-import utils from '@makajs/utils'
+import utils from '@ttkjs/utils'
 import config from './config'
 
 function parseMetaProps(meta, props, data) {
@@ -106,8 +106,8 @@ function metaToComponent(meta, props, data) {
                     dsPath = utils.string.trim(tmp[1]),
                     extParaNames = tmp[0].replace('(', '').replace(')', '').split(','),
                     express = `${dsPath.replace(/\$/g, '$props$.')}`
-                
-                if(config.current.transformer){
+
+                if (config.current.transformer) {
                     express = config.current.transformer(express)
                 }
 
@@ -228,7 +228,7 @@ function metaToComponent(meta, props, data) {
 const MonkeyKing = (props) => {
     const { base } = props
     const data = base.gs()
-    if(!data)
+    if (!data)
         return null
     return metaToComponent(base.gm(undefined, undefined, data), props, data)
 }

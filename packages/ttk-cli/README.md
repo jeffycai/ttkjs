@@ -1,1 +1,1 @@
-# @makajs/cli
+# @ttkjs/cli

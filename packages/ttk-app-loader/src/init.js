@@ -27,7 +27,7 @@ export default function init(option) {
 	const store = createStore(reducer, Map(), applyMiddleware(...mw))
 	
 	globalObj.reduxStore = store
-	globalObj.__maka_store__ = store
+	globalObj.__ttk_store__ = store
 
 	return store
 }

@@ -1,3 +1,3 @@
 module.exports = {
-    ttkServerUrl: 'https://hub.makajs.org'
+    ttkServerUrl: 'https://hub.ttkjs.org'
 }
