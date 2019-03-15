@@ -1,0 +1,76 @@
+{
+  "name": "@ttkjs/cli",
+  "version": "0.1.0",
+  "description": "ttk cli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffycai/ttkjs/packages/ttk-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffycai/ttkjs/packages/ttk-cli/issues"
+  },
+  "homepage": "https://github.com/jeffycai/ttkjs/packages/ttk-cli#readme",
+  "bin": {
+    "ttk": "./bin/ttk-cli.js"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/plugin-proposal-class-properties": "*",
+    "@babel/plugin-proposal-decorators": "*",
+    "@babel/plugin-transform-runtime": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "@babel/runtime": "*",
+    "@ttkjs/sdk": "*",
+    "alphabetjs": "*",
+    "art-template": "*",
+    "babel-loader": "*",
+    "case-sensitive-paths-webpack-plugin": "*",
+    "chalk": "*",
+    "commander": "*",
+    "cross-env": "*",
+    "css-loader": "*",
+    "dotenv": "*",
+    "dotenv-expand": "*",
+    "envinfo": "*",
+    "file-loader": "*",
+    "fork-ts-checker-webpack-plugin": "*",
+    "fs-extra": "*",
+    "fsevents": "*",
+    "got": "*",
+    "html-loader": "*",
+    "html2json-loader": "*",
+    "hyperquest": "*",
+    "less": "*",
+    "less-loader": "*",
+    "markdown-loader": "*",
+    "mini-css-extract-plugin": "*",
+    "optimize-css-assets-webpack-plugin": "*",
+    "raw-loader": "*",
+    "react": "*",
+    "react-dev-utils": "*",
+    "react-dom": "*",
+    "readline-sync": "*",
+    "resolve": "*",
+    "semver": "*",
+    "tar-pack": "*",
+    "typescript": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "url-loader": "*",
+    "validate-npm-package-name": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*",
+    "webpack-dynamic-public-path-2": "*",
+    "which": "*"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "devDependencies": {}
+}

@@ -1,7 +1,7 @@
 {
   "name": "@ttkjs/app-loader",
-  "version": "0.1.0",
-  "description": "maka app loader",
+  "version": "0.1.1",
+  "description": "ttkjs app loader",
   "main": "./lib/index",
   "scripts": {
     "compile": "babel -d lib/ src/"

@@ -1,0 +1,43 @@
+{
+  "name": "@ttkjs/sdk",
+  "version": "0.1.0",
+  "description": "ttkjs sdk",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "build": "webpack  && node script/download.js",
+    "build-min": "cross-env NODE_ENV=production COMPRESS=1 webpack && node script/download.js production",
+    "build-only": "webpack ",
+    "build-only-min": "cross-env NODE_ENV=production COMPRESS=1 webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffycai/ttkjs/packages/ttk-sdk.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffycai/ttkjs/packages/ttk-sdk/issues"
+  },
+  "homepage": "https://github.com/jeffycai/ttkjs/packages/ttk-sdk#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/plugin-proposal-class-properties": "*",
+    "@babel/plugin-proposal-decorators": "*",
+    "@babel/plugin-transform-runtime": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "@babel/runtime": "*",
+    "@ttkjs/app-loader": "*",
+    "@ttkjs/meta-engine": "*",
+    "@ttkjs/utils": "*",
+    "babel-loader": "*",
+    "cross-env": "*",
+    "react": "*",
+    "react-dom": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-cli": "*"
+  }
+}

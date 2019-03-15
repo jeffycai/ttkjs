@@ -1,0 +1,36 @@
+{
+  "name": "@ttkjs/meta-engine",
+  "version": "0.1.1",
+  "description": "ttk meta engine",
+  "main": "./lib/index.js",
+  "scripts": {
+    "compile": "babel -d lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffycai/ttkjs/packages/ttk-meta-engine.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffycai/ttkjs/ttk-meta-engine/issues"
+  },
+  "homepage": "https://github.com/jeffycai/ttkjs/packages/ttk-meta-engine#readme",
+  "dependencies": {
+    "@ttkjs/app-loader": "*",
+    "@ttkjs/utils": "*",
+    "immutable": "*",
+    "lodash": "*",
+    "react": "*",
+    "react-addons-shallow-compare": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/plugin-proposal-class-properties": "*",
+    "@babel/plugin-proposal-decorators": "*",
+    "@babel/plugin-transform-runtime": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*"
+  }
+}
