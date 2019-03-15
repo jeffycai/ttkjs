@@ -1,0 +1,35 @@
+{
+  "name": "@ttkjs/app-loader",
+  "version": "0.1.0",
+  "description": "maka app loader",
+  "main": "./lib/index",
+  "scripts": {
+    "compile": "babel -d lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffycai/ttkjs/packages/ttk-app-loader.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffycai/ttkjs/packages/ttk-app-loader/issues"
+  },
+  "homepage": "https://github.com/jeffycai/ttkjs/packages/ttk-app-loader#readme",
+  "dependencies": {
+    "@ttkjs/utils": "*",
+    "immutable": "*",
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "redux": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/plugin-proposal-class-properties": "*",
+    "@babel/plugin-transform-runtime": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*"
+  }
+}
