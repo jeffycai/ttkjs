@@ -1,6 +1,6 @@
 {
   "name": "@ttkjs/sdk",
-  "version": "0.1.2",
+  "version": "0.1.8",
   "description": "ttkjs sdk",
   "main": "lib/index.js",
   "scripts": {

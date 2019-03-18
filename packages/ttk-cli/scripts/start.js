@@ -99,6 +99,7 @@ function copyDep() {
 }
 
 function createMainJsFile() {
+
   const tplPath = path.resolve(__dirname, '..', 'template', isDev ? 'main.js' : 'main.min.js');
   let content = fs.readFileSync(tplPath, 'utf-8');
   if (packageJson.requirejs && packageJson.requirejs.paths) {
