@@ -12,7 +12,7 @@ if (typeof appName === 'undefined') {
     console.error('please input appName:');
     console.log();
     console.log('example:');
-    console.log(`  ttk add ${chalk.green('login')}`);
+    console.log(`  ttkjs add ${chalk.green('login')}`);
     console.log();
     process.exit(0);
 }

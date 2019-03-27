@@ -45,7 +45,7 @@ var Hoc,
 
 
 
-//Initialize ttk environment
+//Initialize ttkjs environment
 function init(option) {
     appLoader.init(option)
 }

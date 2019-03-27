@@ -11,7 +11,7 @@ if (typeof projectName === 'undefined') {
   console.error('Please enter appName:');
   console.log();
   console.log('example:');
-  console.log(`  ttk app ${chalk.green('hello-world')}`);
+  console.log(`  ttkjs app ${chalk.green('hello-world')}`);
   console.log();
   process.exit(0);
 }
@@ -54,10 +54,10 @@ function createPackageJson(root, name) {
     },
     homepage: `https://github.com/jeffycai/${name}#readme`,
     scripts: {
-      'start': 'ttk start',
-      'dev': 'ttk start --dev',
-      'build': 'ttk build',
-      'pkg': 'ttk pkg'
+      'start': 'ttkjs start',
+      'dev': 'ttkjs start --dev',
+      'build': 'ttkjs build',
+      'pkg': 'ttkjs pkg'
     },
     dependencies: {
     },

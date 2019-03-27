@@ -13,7 +13,7 @@ if (major < 8) {
             'You are running Node ' +
             currentNodeVersion +
             '.\n' +
-            'TTK requires Node 8 or higher.ttk. \n' +
+            'ttkjs requires Node 8 or higher. \n' +
             'Please update your version of Node.'
         )
     );
@@ -32,7 +32,7 @@ try {
     console.log(err)
 }
 if (!flag) {
-    console.log(chalk.yellowBright('TTK depends on yarn, you do not install it. \n'))
+    console.log(chalk.yellowBright('ttkjs depends on yarn, you do not install it. \n'))
     console.log(chalk.greenBright('Please install yarn first.\n'))
     console.log(chalk.cyan('npm i -g yarn'))
     process.exit(1);
