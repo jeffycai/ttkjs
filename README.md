@@ -469,9 +469,9 @@ function initMockData() {
     if (!mockData.users) {
          mockData.users = [{
             id: 1,
-            account: 13334445556,
+            account: 13333333333,
             password: 'c4ca4238a0b923820dcc509a6f75849b',
-            name: 'zlj'
+            name: 'ttk'
         }]
     }
 }
@@ -487,7 +487,7 @@ fetch.mock('/v1/login', (option, headers) => {
         }
     }
     else {
-        return { result: false, error: { message: '请输入正确的用户名密码（系统内置用户user:13334445556,pwd:1）' } }
+        return { result: false, error: { message: '请输入正确的用户名密码（系统内置用户user:13333333333,pwd:1）' } }
     }
 })
 ```
